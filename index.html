@@ -9,6 +9,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles/style.css" />
+        <script src="./js/script.js" type="module"></script>
         <title>Top hotels</title>
     </head>
     <body>
@@ -45,7 +46,9 @@
                                             src="./images/carlton.jpg"
                                             alt="carlton"
                                         />
+                                        <div class="hidden" id="carlton"></div>
                                     </a>
+                                    
                                     <div class="item-card-content">                                        
                                         <a href="#" class="item-card-link">
                                             <h4 class="item-card-title">
@@ -59,7 +62,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="carlton">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,6 +73,7 @@
                                             src="./images/herods.jpg"
                                             alt="herods"
                                         />
+                                        <div class="hidden" id="herods"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -85,7 +89,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="herods">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -96,6 +100,7 @@
                                             src="./images/verd.jpg"
                                             alt="verd"
                                         />
+                                        <div class="hidden" id="verd"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -109,7 +114,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="verd">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -120,6 +125,7 @@
                                             src="./images/YMCA.jpg"
                                             alt="YMCA"
                                         />
+                                        <div class="hidden" id="YMCA"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -133,7 +139,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="YMCA">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -144,6 +150,7 @@
                                             src="./images/akotika.jpg"
                                             alt="akotika"
                                         />
+                                        <div class="hidden" id="akotika"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -157,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="akotika">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -168,6 +175,7 @@
                                             src="./images/frangiorgio.jpg"
                                             alt="frangiorgio"
                                         />
+                                        <div class="hidden" id="frangiorgio"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -181,7 +189,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="frangiorgio">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -192,6 +200,7 @@
                                             src="./images/parklane.jpg"
                                             alt="parklane"
                                         />
+                                        <div class="hidden" id="parklane"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -205,7 +214,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="parklane">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -216,6 +225,7 @@
                                             src="./images/antalya.jpg"
                                             alt="antalya"
                                         />
+                                        <div class="hidden" id="antalya"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -229,7 +239,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="antalya">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -240,6 +250,7 @@
                                             src="./images/barut.jpg"
                                             alt="barut"
                                         />
+                                        <div class="hidden" id="barut"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -253,7 +264,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="barut">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -264,6 +275,7 @@
                                             src="./images/vrachokipos.jpg"
                                             alt="vrachokipos"
                                         />
+                                        <div class="hidden" id="vrachokipos"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -277,7 +289,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="vrachokipos">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -288,6 +300,7 @@
                                             src="./images/john.jpg"
                                             alt="john"
                                         />
+                                        <div class="hidden" id="john"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -301,7 +314,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="john">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -312,6 +325,7 @@
                                             src="./images/heaven.jpg"
                                             alt="heaven"
                                         />
+                                        <div class="hidden" id="heaven"></div>
                                     </a>
                                     <div class="item-card-content">
                                         
@@ -325,7 +339,7 @@
                                         </div>
                                     </div>
                                     <div class="item-card-button">
-                                        <a href="#" class="button">Map</a>
+                                        <a href="#" class="button" data-name="heaven">Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -343,5 +357,6 @@
             </div>
             </footer>
         </div>
+        
     </body>
 </html>
