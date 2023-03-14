@@ -9,7 +9,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="/styles/style.css" />
-        <script src="./js/script.js" type="module"></script>
+        <script src="/js/script.js" type="module"></script>
         <title>Top hotels</title>
     </head>
     <body>
@@ -41,13 +41,15 @@
                         <div class="cards-body">
                             <div class="cards-column">
                                 <div class="cards-item item-card">
-                                    <a href="#" class="item-card-img _ibg">
+                                    <div class="item-card-img _ibg">
+                                        
                                         <img
                                             src="./images/carlton.jpg"
                                             alt="carlton"
-                                        />
-                                        <div class="hidden" id="carlton"></div>
-                                    </a>
+                                        />   
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.3609151937876!2d34.76737791580102!3d32.08652998118601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4c771eb50411%3A0xd8c44a8e602c4453!2z0JrQsNGA0LvRgtC-0L0!5e0!3m2!1sru!2sua!4v1678559153027!5m2!1sru!2sua" id="carlton" class="hidden" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        
+                                    </div>                              
                                     
                                     <div class="item-card-content">                                        
                                         <a href="#" class="item-card-link">
@@ -61,9 +63,7 @@
                                             63573, Israel
                                         </div>
                                     </div>
-                                    <div class="item-card-button">
-                                        <a href="#" class="button" data-name="carlton">Map</a>
-                                    </div>
+                                    <button class="button" data-name="carlton"> Map </button>
                                 </div>
                             </div>
                             <div class="cards-column">

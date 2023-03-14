@@ -10,9 +10,7 @@ buttonArray.forEach((btn) => {
         switch (btn.dataset.name) {
             case "carlton":            
                 showMap(
-                    "#carlton",
-                    `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.3609151937876!2d34.76737791580102!3d32.08652998118601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4c771eb50411%3A0xd8c44a8e602c4453!2z0JrQsNGA0LvRgtC-0L0!5e0!3m2!1sru!2sua!4v1678559153027!5m2!1sru!2sua" height='${styleElem.height}' width='${styleElem.width}' style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
-                );
+                    "#carlton");
                 break;
             case "herods":                
                 showMap(
@@ -60,10 +58,12 @@ buttonArray.forEach((btn) => {
     });
 });
 
-function showMap(selector, url) {
+function showMap(selector) {
     const element = document.querySelector(selector);
+    const img  = element.previousElementSibling;
+    img.classList.toggle('hidden');
+
     element.classList.toggle("hidden");
     element.classList.toggle("active");
-
-    element.innerHTML = url;
+    
 }
