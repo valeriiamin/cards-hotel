@@ -1,30 +1,38 @@
 /* Обнуление стилей*/
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
     outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
     outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
     display: block;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-size: 100%;
@@ -34,7 +42,9 @@ html, body {
     -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
     font-family: inherit;
 }
 
@@ -46,12 +56,13 @@ button {
     cursor: pointer;
 }
 
-button::-moz-focus-inner{
+button::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
 }
 
@@ -67,7 +78,12 @@ img {
     vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: inherit;
     font-weight: 400;
 }
@@ -83,7 +99,7 @@ body {
     font-family: Montserrat;
 }
 
-.wrapper{
+.wrapper {
     min-height: 100%;
     overflow: hidden;
     display: flex;
@@ -101,7 +117,8 @@ body {
     position: relative;
 }
 
-._ibg img, ._ibg iframe {
+._ibg img,
+._ibg iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -149,11 +166,11 @@ body {
     line-height: calc(24 / 14 * 100%);
 }
 
-.menu-link:hover{
+.menu-link:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 992px) {    
+@media (max-width: 992px) {
     .header-menu {
         margin: 0 0 0 80px;
     }
@@ -172,7 +189,7 @@ body {
 
     .header-menu {
         margin: 0px 0px 0px 20px;
-    }    
+    }
 
     .menu-link {
         font-size: 18px;
@@ -180,10 +197,8 @@ body {
 }
 
 /* ----------------main-------------------- */
-.main{
-    
+.main {
 }
-
 
 /* -------------------------------section------------------- */
 
@@ -191,44 +206,41 @@ body {
     margin: 125px 0px 80px 0px;
 }
 
-.cards-container{    
+.cards-container {
 }
 
-.cards-body{
+.cards-body {
     margin: 0px -20px -30px;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
 }
 
-.cards-column{
+.cards-column {
     margin: 0 0 30px 0;
     min-height: 100%;
     padding: 0 20px;
     flex: 0 1 33.3333%;
 }
 .cards-item {
-
 }
 .item-card {
     background-color: #fff;
     display: flex;
     height: 100%;
     flex-direction: column;
-
 }
 .item-card-content {
     flex: 1 1 auto;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .item-card-img {
     display: block;
     padding: 0px 0px 230px 0px;
-
 }
 
-.item-card-link{
+.item-card-link {
     margin-bottom: 15px;
 }
 
@@ -237,25 +249,22 @@ body {
     display: inline-block;
 }
 
-.item-card-link:hover{
+.item-card-link:hover {
     text-decoration: underline;
 }
 
-.item-card-title {    
+.item-card-title {
     font-weight: 700;
     font-size: 16px;
-    line-height: 150%; 
+    line-height: 150%;
     letter-spacing: 0.1px;
 }
 .item-card-text {
     color: #737373;
-    line-height: 143%; 
+    line-height: 143%;
     letter-spacing: 0.2px;
 }
 
-.item-card-button{
-    padding: 0 20px 20px 20px;
-}
 .button {
     background: #ff7b47;
     color: #fff;
@@ -273,7 +282,7 @@ body {
     transition: all 0.3s ease 0s;
 }
 
-.button:hover{
+.button:hover {
     background-color: #fff;
     color: #ff7b47;
     border: 1px solid #ff7b47;
@@ -290,7 +299,7 @@ body {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .cards {
         margin: 80px 0px 40px 0px;
     }
@@ -311,11 +320,11 @@ body {
 .footer {
 }
 
-.footer-top{
-    background: #17213C;
+.footer-top {
+    background: #17213c;
     padding: 35px 0px;
 }
-.footer-main {    
+.footer-main {
 }
 
 .footer-row {
@@ -325,15 +334,12 @@ body {
     margin: 0px -15px;
 }
 
-.footer-row-p{
+.footer-row-p {
     color: #fff;
 }
 
-
 /* ------------------------------------------ */
 
-.hidden{
+.hidden {
     display: none;
 }
-
-
